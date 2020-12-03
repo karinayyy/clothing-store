@@ -19,6 +19,7 @@ $(document).on('click','.form-cancel',function(){
     $('.form').removeClass('login-active').removeClass('sign-up-active')
 });
 
+
 $(document).ready(function() {
     $('#adaptive').lightSlider({
         adaptiveHeight:true,
@@ -29,6 +30,7 @@ $(document).ready(function() {
     });
 });
 
+
 $(document).ready(function(){
     $('#autoWidth').lightSlider({
         autoWidth:true,
@@ -37,4 +39,21 @@ $(document).ready(function(){
             $('#autoWidth').removeClass('cs-hidden');
         }
     });
+});
+
+$(window).scroll(function(){
+    if($(document).scrollTop() > 50){
+        $('.navigation').addClass('fix-nav');
+    }
+    else{
+        $('.navigation').removeClass('fix-nav');
+    }
+});
+
+
+$(document).ready(function(){
+    $('.toggle').click(function(){
+        $('.toggle').toggleClass('active')
+        $('.navigation').toggleClass('active')
+    })
 });
