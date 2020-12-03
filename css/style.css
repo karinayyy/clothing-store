@@ -396,7 +396,8 @@ nav {
     justify-content: center;
     align-items: center;
 }
-.feature-heading h2 {
+.feature-heading h2, 
+.arrival-heading strong{
     font-size: 1.5rem;
     color: #1b1919;
     letter-spacing: 1px;
@@ -438,6 +439,25 @@ nav {
 
 #autoWidth {
     display: flex;
-    justify-content: center; !important;
+    justify-content: center !important; 
     margin: 10px auto 40px auto;
+}
+
+.arrival-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.arrival-heading strong {
+    color: #fff;
+    background-color: #202020;
+    font-weight: 500;
+}
+
+.arrival-headingp{
+    color: #808080;
+    margin: 10px;
+    font-size: .9rem;
 }
